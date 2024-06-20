@@ -74,7 +74,7 @@ if (selected == 'Implementation'):
     hasil_input_split = []
     # Tampilkan kolom input sesuai dengan jumlah yang diminta
     for i in range(jumlah_kolom_split):
-        input_value = st.number_input(f"Kolom input min_samples_split {i+1}", step=1)
+        input_value = st.number_input(f"Kolom input min_samples_split {i+1}", 2,step=1)
         hasil_input_split.append(input_value)
     
     st.markdown('**Max_features**')
